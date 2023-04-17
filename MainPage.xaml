@@ -1,0 +1,83 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:Calc"
+             x:Class="Calc.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}"
+			 Padding="{OnPlatform iOS='0,20,0,0'}">
+
+    <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="#333333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="resultText" FontSize="60" FontAttributes="None" BackgroundColor="Black" Text="0"
+              TextColor="DarkOrange" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+              LineBreakMode="NoWrap" Grid.ColumnSpan="4" />
+
+        <Button Text="7" Grid.Row="1" Grid.Column="0"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="8" Grid.Row="1" Grid.Column="1"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="9" Grid.Row="1" Grid.Column="2"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+
+        <Button Text="4" Grid.Row="2" Grid.Column="0"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="5" Grid.Row="2" Grid.Column="1"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="6" Grid.Row="2" Grid.Column="2"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+
+        <Button Text="1" Grid.Row="3" Grid.Column="0"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="2" Grid.Row="3" Grid.Column="1"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="3" Grid.Row="3" Grid.Column="2"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+        <Button Text="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"
+               BackgroundColor="#262626" TextColor="White"
+               FontSize="28" CornerRadius="0" Clicked="SzamKiValaszt" />
+
+        <Button Text="/" Grid.Row="1" Grid.Column="3"
+                BackgroundColor="#1a1a1a" TextColor="DarkOrange"
+                FontSize="28" CornerRadius="0" Clicked="MuvKiValaszt" />
+        <Button Text="x" Grid.Row="2" Grid.Column="3"
+                BackgroundColor="#1a1a1a" TextColor="DarkOrange"
+                FontSize="28" CornerRadius="0" Clicked="MuvKiValaszt" />
+        <Button Text="-" Grid.Row="3" Grid.Column="3"
+                BackgroundColor="#1a1a1a" TextColor="DarkOrange"
+                FontSize="28" CornerRadius="0" Clicked="MuvKiValaszt" />
+        <Button Text="+" Grid.Row="4" Grid.Column="3"
+                BackgroundColor="#1a1a1a" TextColor="DarkOrange"
+                FontSize="28" CornerRadius="0" Clicked="MuvKiValaszt" />
+
+        <Button Text="C" Grid.Row="5" Grid.Column="0"
+                BackgroundColor="#1a1a1a" TextColor="DarkOrange"
+                FontSize="28" CornerRadius="0" Clicked="Torles" />
+
+        <Button Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
+                BackgroundColor="DarkOrange" TextColor="White"
+                FontSize="28" CornerRadius="0" Clicked="Egyenlo" />
+    </Grid>
+</ContentPage> 
