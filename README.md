@@ -1,4 +1,4 @@
-# .NET-Maui-C-Calculator-Application
+# .NET-Maui-C-sharp Calculator-Application
 .NET Maui framework and C-sharp language simple Calculator Application for University. See description in the attached .docx file.(HUN)
 ![Képernyőkép 2023-04-17 171528](https://user-images.githubusercontent.com/46298416/232536373-0c70beb8-d419-4c99-9865-9bc0a8d3cbe8.jpg)
 On Android
